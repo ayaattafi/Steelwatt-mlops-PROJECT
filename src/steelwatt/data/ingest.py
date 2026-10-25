@@ -101,7 +101,8 @@ def ingest(output_path: Path = DEFAULT_OUTPUT, force: bool = False) -> Path:
     df = download_dataset()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     tmp_path = output_path.with_suffix(output_path.suffix + ".tmp")
-    df.to_csv(tmp_path, index=False)
+    # LF forcé : le hash DVC du CSV est identique sous Windows et Linux.
+    df.to_csv(tmp_path, index=False, lineterminator="\n")
     tmp_path.replace(output_path)  # écriture atomique
     logger.info(
         "Dataset écrit : %s (%d lignes, %d colonnes)",
