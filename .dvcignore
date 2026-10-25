@@ -1,0 +1,6 @@
+# Fichiers ignorés par DVC lors du calcul des hashes de répertoires.
+**/.gitkeep
+**/__pycache__/
+**/.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
