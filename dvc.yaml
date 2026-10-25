@@ -1,0 +1,21 @@
+stages:
+  ingest:
+    cmd: python -m steelwatt.data.ingest --output data/raw/steel_industry_data.csv
+    deps:
+      - src/steelwatt/data/ingest.py
+    outs:
+      - data/raw/steel_industry_data.csv
+
+  validate:
+    cmd: >-
+      python -m steelwatt.data.validate
+      --input data/raw/steel_industry_data.csv
+      --report reports/validation.json
+    deps:
+      - src/steelwatt/data/validate.py
+      - data/raw/steel_industry_data.csv
+    metrics:
+      - reports/validation.json:
+          cache: false
+
+  # TODO Jalon 2 : featurize -> split -> train -> evaluate

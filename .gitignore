@@ -26,8 +26,10 @@ env/
 # Les données sont versionnées par DVC (fichiers .dvc / dvc.lock), pas par git.
 /data/raw/*
 !/data/raw/.gitkeep
+!/data/raw/.gitignore
 /data/processed/*
 !/data/processed/.gitkeep
+!/data/processed/.gitignore
 .dvc/config.local
 .dvc/tmp/
 .dvc/cache/
