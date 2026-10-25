@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steelwatt"
+version = "0.1.0"
+description = "Plateforme MLOps de prévision à 1 h de la consommation électrique d'une aciérie."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "Aya Attafi" },
+    { name = "Louay Cherni" },
+    { name = "Tayf Khadhraoui" },
+]
+# Les versions exactes sont épinglées dans requirements.txt ;
+# ici on ne déclare que les dépendances d'exécution du Jalon 1.
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "ucimlrepo>=0.0.7",
+]
+
+[project.scripts]
+steelwatt-ingest = "steelwatt.data.ingest:main"
+steelwatt-validate = "steelwatt.data.validate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers"
+
+[tool.coverage.run]
+source = ["steelwatt"]
+branch = true
+omit = ["*/__init__.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+fail_under = 75
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+]

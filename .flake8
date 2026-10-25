@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 88
+# E203 / W503 : incompatibles avec le formatage de black.
+extend-ignore = E203, W503
+exclude =
+    .git,
+    .venv,
+    venv,
+    __pycache__,
+    .dvc,
+    mlruns,
+    build,
+    dist
