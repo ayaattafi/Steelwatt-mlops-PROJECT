@@ -53,19 +53,13 @@ GitHub (PR) ──► Actions CI (lint + pytest) + rapport CML ──► Image D
 steelwatt-mlops/
 ├── .github/workflows/ci.yml   # CI : flake8, black --check, pytest + couverture
 ├── data/
-│   ├── raw/                   # CSV brut (sortie DVC, non versionné par git)
-│   └── processed/             # features (Jalon 2)
+│   └── raw/                   # CSV brut (sortie DVC, non versionné par git)
 ├── notebooks/
 │   └── 01_eda_check.ipynb     # vérification Load_Type / fuite de cible
 ├── reports/
 │   └── validation.json        # métriques DVC de l'étape validate
 ├── src/steelwatt/
-│   ├── data/                  # ingest.py, validate.py
-│   ├── features/              # Jalon 2
-│   ├── models/                # Jalon 2
-│   ├── api/                   # Jalon 3
-│   ├── monitoring/            # Jalon 4
-│   └── pipelines/             # Jalon 4 (Prefect)
+│   └── data/                  # ingest.py, validate.py
 ├── tests/                     # tests pytest (sans réseau)
 ├── dvc.yaml / dvc.lock        # pipeline DVC
 ├── pyproject.toml             # packaging + black / pytest / coverage
