@@ -27,9 +27,6 @@ env/
 /data/raw/*
 !/data/raw/.gitkeep
 !/data/raw/.gitignore
-/data/processed/*
-!/data/processed/.gitkeep
-!/data/processed/.gitignore
 .dvc/config.local
 .dvc/tmp/
 .dvc/cache/
