@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  ingest:
+    cmd: python -m steelwatt.data.ingest --output 
+      data/raw/steel_industry_data.csv
+    deps:
+    - path: src/steelwatt/data/ingest.py
+      hash: md5
+      md5: e8d09ab8492cc870ef987139f33c03f3
+      size: 4626
+    outs:
+    - path: data/raw/steel_industry_data.csv
+      hash: md5
+      md5: cb2ea9113df2316290d40ee7e4c57f3b
+      size: 2866605
+  validate:
+    cmd: python -m steelwatt.data.validate --input 
+      data/raw/steel_industry_data.csv --report reports/validation.json
+    deps:
+    - path: data/raw/steel_industry_data.csv
+      hash: md5
+      md5: cb2ea9113df2316290d40ee7e4c57f3b
+      size: 2866605
+    - path: src/steelwatt/data/validate.py
+      hash: md5
+      md5: 96df14c8049b31166c76211859c4f905
+      size: 13005
+    outs:
+    - path: reports/validation.json
+      hash: md5
+      md5: 10f18a9275138a3f238a11ba2618c768
+      size: 1277

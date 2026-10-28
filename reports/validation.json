@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "n_rows": 35040,
+  "n_columns": 11,
+  "n_checks": 7,
+  "n_checks_failed": 0,
+  "checks": {
+    "columns": {
+      "name": "columns",
+      "passed": true,
+      "details": {
+        "n_columns": 11,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    "dtypes": {
+      "name": "dtypes",
+      "passed": true,
+      "details": {
+        "wrong_dtypes": {}
+      }
+    },
+    "row_count": {
+      "name": "row_count",
+      "passed": true,
+      "details": {
+        "n_rows": 35040,
+        "expected": 35040
+      }
+    },
+    "missing_values": {
+      "name": "missing_values",
+      "passed": true,
+      "details": {
+        "missing": {}
+      }
+    },
+    "bounds": {
+      "name": "bounds",
+      "passed": true,
+      "details": {
+        "out_of_bounds": {}
+      }
+    },
+    "categories": {
+      "name": "categories",
+      "passed": true,
+      "details": {
+        "unknown": {}
+      }
+    },
+    "time_step": {
+      "name": "time_step",
+      "passed": true,
+      "details": {
+        "start": "2018-01-01 00:15:00",
+        "end": "2019-01-01 00:00:00",
+        "n_irregular_steps": 0,
+        "n_duplicates": 0,
+        "n_midnight_rollovers": 365,
+        "examples": [],
+        "n_nsm_mismatch": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Dépendances d'exécution épinglées (Python 3.11).
+# Data
+pandas==3.1.0
+numpy==2.4.6
+scipy==1.17.1
+ucimlrepo==0.0.7
+# Versioning des données
+dvc==3.67.1
+dvc-s3==3.3.0
+# Modélisation & tracking
+scikit-learn==1.9.1
+xgboost==3.2.0
+mlflow==3.17.2
+# Serving
+fastapi==0.150.0
+uvicorn==0.54.0
+pydantic==2.14.1
+# Orchestration & monitoring
+prefect==3.9.0
+evidently==0.7.23
+prometheus-client==0.26.0
