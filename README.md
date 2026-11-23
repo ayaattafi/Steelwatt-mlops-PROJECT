@@ -89,11 +89,10 @@ Sans accès au remote, `dvc repro` retélécharge le dataset depuis UCI puis le 
 
 ## Équipe
 
-| Membre | Rôle |
-|---|---|
-| ATTAFI Aya | Lead Data & DVC + Modeling & MLflow |
-| CHERNI Louay | Lead Serving & CI/CD + Déploiement Blue/Green |
-| KHADHRAOUI Tayf | Lead Observabilité & SRE + Orchestration Prefect |
+- ATTAFI Aya
+- CHERNI Louay
+- KHADHRAOUI Tayf
+- LAHMER Chedi
 
 ## Dataset et citation
 

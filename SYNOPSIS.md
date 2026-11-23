@@ -5,11 +5,12 @@
 ## 1. Informations Générales & Équipe
 
 * **Titre du Projet :** **SteelWatt** — Plateforme MLOps de Prévision de la Consommation Énergétique d'une Aciérie
-* **Taille du groupe :** 3 étudiants (Trinôme)
+* **Taille du groupe :** 4 étudiants
 * **Membres de l'équipe :**
-  1. **Étudiant 1 (Lead Data & DVC + Modeling & MLflow) :** ATTAFI Aya — Email : `...`
-  2. **Étudiant 2 (Lead Serving & CI/CD + Déploiement Blue/Green) :** CHERNI Louay — Email : `...`
-  3. **Étudiant 3 (Lead Observabilité & SRE + Orchestration Prefect) :** KHADHRAOUI Tayf — Email : `...`
+  1. ATTAFI Aya
+  2. CHERNI Louay
+  3. KHADHRAOUI Tayf
+  4. LAHMER Chedi
 * **Lien vers le Dépôt GitHub :** `https://github.com/<organisation>/steelwatt-mlops`
 
 ---

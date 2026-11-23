@@ -13,6 +13,7 @@ authors = [
     { name = "Aya Attafi" },
     { name = "Louay Cherni" },
     { name = "Tayf Khadhraoui" },
+    { name = "Chedi Lahmer" },
 ]
 # Les versions exactes sont épinglées dans requirements.txt ;
 # ici on ne déclare que les dépendances d'exécution du Jalon 1.
